@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TO-DO-LIST</title>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "USER/css/home.css" %}">
+</head>
+<body>
+    <h1 class = "greetings">TO-DO-LIST</h1>
+
+    <div class = "head">
+        <a class = "login" href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+        <form method="post" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+
+</body>
+</html>

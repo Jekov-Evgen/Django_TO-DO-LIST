@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'USER/css/homepage.css' %}">
+</head>
+<body>
+    <header>
+        <h1 class="greetings">Hello, {{ username }}!</h1>
+        <div class="head">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="greetings">To-do list:</h1>
+    </header>
+
+    <main>
+        <section>
+            <form method="post" class="task-form" action="{% url 'add_task' %}">
+                {% csrf_token %}
+                <input type="text" name="task_name" placeholder="Enter task" class="task-input">
+                <button type="submit" class="task-button">Add Task</button>
+            </form>
+        </section>
+
+        <section>
+            <form method="post" class="task-form-del" action="{% url 'del_task' %}">
+                {% csrf_token %}
+                <input type="text" name="task_number" placeholder="Enter task number to delete" class="task-del">
+                <button type="submit" class="task-button-del">Delete Task</button>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="tasks-header">Your tasks:</h2>
+            <ul class="tasks-list">
+                {% for task in tasks %}
+                    <li class="task-item">{{ task.number_task }}: {{ task.name_task }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

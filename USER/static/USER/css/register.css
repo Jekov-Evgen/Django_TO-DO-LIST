@@ -1,0 +1,78 @@
+.register {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.register h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.register form label {
+    margin-bottom: 5px;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.register form input[type="text"],
+.register form input[type="password"],
+.register form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.register button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.register button:hover {
+    background-color: white;
+    color: black;
+    border: solid black;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.register a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.register a:hover {
+    text-decoration: underline;
+    font-family: 'DejaVu Sans Mono', monospace;
+}

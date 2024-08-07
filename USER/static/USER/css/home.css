@@ -1,0 +1,58 @@
+h1.greetings {
+    text-align: center;
+    border: 1rem solid white;
+    background: black;
+    color: white;
+    font-size: 50px;
+    margin-top: 0;
+    font-family: 'DejaVu Sans Mono', monospace;
+    padding: 20px 0; 
+    border-radius: 10px; 
+}
+
+div.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+div.head a {
+    font-size: 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-family: 'DejaVu Sans Mono', monospace;
+    border: solid;
+    border-radius: 10px;
+    background: black;
+    padding: 10px 20px;
+}
+
+div.head a:hover {
+    color: black;
+    background: white;
+    border-color: black;
+}
+
+div.head button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: solid;
+    border-radius: 10px;
+    font-family: 'DejaVu Sans Mono', monospace;
+    color: white;
+    background: black;
+}
+
+div.head button:hover {
+    color: black;
+    background: white;
+    border-color: black;
+}

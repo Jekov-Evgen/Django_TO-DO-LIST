@@ -1,0 +1,133 @@
+h1.greetings {
+    text-align: center;
+    border: 1rem solid white;
+    background: black;
+    color: white;
+    font-size: 50px;
+    margin-top: 0;
+    font-family: 'DejaVu Sans Mono', monospace;
+    padding: 20px 0; 
+    border-radius: 10px; 
+}
+
+div.head {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+div.head ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.head ul li {
+    margin: 10px 0;
+}
+
+div.head a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'DejaVu Sans Mono', monospace;
+    border: solid;
+    border-radius: 10px;
+    background: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+}
+
+div.head a:hover {
+    color: black;
+    background: white;
+    border-color: black;
+}
+
+.task-form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.task-input {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 50%;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.task-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    font-family: 'DejaVu Sans Mono', monospace;
+    cursor: pointer;
+}
+
+.task-button:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+.tasks-header {
+    text-align: center;
+    font-family: 'DejaVu Sans Mono', monospace;
+    font-size: 30px;
+    color: black;
+}
+
+.tasks-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.task-item {
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.task-form-del {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.task-del {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 50%;
+    font-family: 'DejaVu Sans Mono', monospace;
+    margin-right: 10px;
+}
+
+.task-button-del {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    font-family: 'DejaVu Sans Mono', monospace;
+    cursor: pointer;
+}
+
+.task-button-del:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}

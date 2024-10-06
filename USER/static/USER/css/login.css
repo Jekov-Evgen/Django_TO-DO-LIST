@@ -1,17 +1,26 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .login {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 40px;
     border-radius: 10px;
-    background-color: #f9f9f9;
-    font-family: 'DejaVu Sans Mono', monospace;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .login h1 {
-    text-align: center;
+    font-size: 2rem;
     margin-bottom: 20px;
-    font-family: 'DejaVu Sans Mono', monospace;
+    color: #333;
 }
 
 .login form {
@@ -19,59 +28,34 @@
     flex-direction: column;
 }
 
-.login form p {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    font-family: 'DejaVu Sans Mono', monospace;
-}
-
-.login form label {
-    margin-bottom: 5px;
-    font-family: 'DejaVu Sans Mono', monospace;
-}
-
-.login form input[type="text"],
-.login form input[type="password"] {
+.login form input {
     padding: 10px;
-    font-size: 16px;
+    margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: calc(100% - 22px);
-    box-sizing: border-box;
-    font-family: 'DejaVu Sans Mono', monospace;
 }
 
-.login button {
-    width: 100%;
+.login form button {
     padding: 10px;
-    background-color: black;
+    background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.1rem;
     cursor: pointer;
-    margin-top: 15px;
-    font-family: 'DejaVu Sans Mono', monospace;
 }
 
-.login button:hover {
-    background-color: white;
-    color: black;
-    border: solid black;
-    font-family: 'DejaVu Sans Mono', monospace;
+.login form button:hover {
+    opacity: 0.9;
 }
 
 .login a {
     display: block;
-    text-align: center;
-    margin-top: 10px;
-    color: #007bff;
+    margin-top: 20px;
+    color: #007BFF;
     text-decoration: none;
-    font-family: 'DejaVu Sans Mono', monospace;
 }
 
 .login a:hover {
     text-decoration: underline;
-    font-family: 'DejaVu Sans Mono', monospace;
 }
